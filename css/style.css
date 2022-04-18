@@ -4,10 +4,29 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+#home {
+    width: 100%;
+    height: 1080px;
+    background: #1a1d3b;
+    color: white;
+}
+
+/** CSS nav **/
+nav {
+    background-color:cornflowerblue;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    opacity: 0.8;
+    position: fixed;
 }
 #nav-list{
-    background-color: darkcyan;
     display: flex;
     justify-content: flex-end;
 }
@@ -15,7 +34,25 @@
     margin-right: 2rem;
     text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: 1.2px;
 }
+
+/** introduction **/
+#introduction {
+    position: absolute;
+    text-align: left;
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 40%;
+    margin-bottom: 20%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#name {
+    color: deepskyblue;
+    font-size: larger;
+}
+
 .github-icone {
     font-size: 30px;
 }
