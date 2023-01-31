@@ -7,21 +7,29 @@
 body {
     font-family: 'Poppins';
 }
-
+header {
+    color: white;
+}
+:any-link {
+    cursor: pointer;
+    pointer-events: auto;
+}
 #particles {
+    position: absolute;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background-color: #1A1B26;
 }
-
 nav {
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
+    pointer-events: none;
 }
 nav .logo {
    height: 50px; 
@@ -36,6 +44,10 @@ nav .logo {
     font-weight: bold;
     margin: 0 25px;
 }
+#nav-links>li>a {
+    text-decoration: none;
+    color: white;
+}
 #nav-links>li>a:hover {
     color: #B796F0;
     font-weight: bold;
@@ -47,6 +59,21 @@ nav .logo {
     right: 50px;
     width: 35px;
 }
+
+#presentation {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+    pointer-events: none;
+}
+#presentation>span {
+    margin: 0;
+}
+
 @media screen and (max-width: 900px) {
 
         #menu-button {
