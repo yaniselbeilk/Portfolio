@@ -20,11 +20,11 @@ header {
     z-index: 1;
     height: 100vh;
     width: 100%;
-    background-color: #1A1B26;
+    background: radial-gradient(ellipse at bottom, #031163 0%, #000 85%);
 }
 nav {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -59,6 +59,7 @@ nav .logo {
     top: 50px;
     right: 50px;
     width: 35px;
+    pointer-events: auto;
 }
 
 #presentation {
@@ -87,18 +88,17 @@ nav .logo {
             left: 0;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 50%;
             height: 100vh;
-            background-color: #ffffff28;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(2px) brightness(60%);
+            filter: drop-shadow(-10px 10px 4px #1fbfb8);
             justify-content: center;
             align-items: center;
-            margin-left: -100%;
+            margin-left: 100%;
         }
         #nav-links.mobile-menu {
-            margin-left: 0;
+            margin-left: 50%;
         }
-
         #nav-links>li {
             margin: 25px 0;
             font-size: 1.5em;
