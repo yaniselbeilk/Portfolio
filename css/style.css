@@ -1,12 +1,14 @@
+element {
+    --bluesteel: #4682B4;
+}
+
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-body {
-    font-family: 'Poppins';
 }
 header {
     color: white;
@@ -24,7 +26,7 @@ header {
 }
 nav {
     position: fixed;
-    z-index: 3;
+    z-index: 9;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -55,25 +57,41 @@ nav .logo {
 }
 #menu-button {
     display: none;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 35px;
+    position: relative;
+    width: 50px;
     pointer-events: auto;
 }
 
 #presentation {
     position: relative;
-    z-index: 2;
+    top: 30vh;
+    bottom: 20vh;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 200px;
+    justify-content: space-between;
     pointer-events: none;
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-#presentation>span {
-    margin: 0;
+#hi {
+    color: #1fbfb8;
+    font-size: 20px;
+}
+#name {
+    font-size: clamp(40px, 8vw, 80px);
+    margin-top: 20px;
+}
+#profession {
+    font-size: clamp(40px, 8vw, 80px);
+    color: #97D3FF;
+}
+#biography {
+    font-size: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
@@ -88,16 +106,17 @@ nav .logo {
             left: 0;
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 70%;
             height: 100vh;
             backdrop-filter: blur(2px) brightness(60%);
             filter: drop-shadow(-10px 10px 4px #1fbfb8);
             justify-content: center;
             align-items: center;
             margin-left: 100%;
+            pointer-events: auto;
         }
         #nav-links.mobile-menu {
-            margin-left: 50%;
+            margin-left: 30%;
         }
         #nav-links>li {
             margin: 25px 0;
