@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: white;
+    /* global variable */
+    --steelblue: #4682B4;
+    --lightsteelblue: #B0C4DE;
+}
+:any-link {
+    cursor: pointer;
+    pointer-events: auto;
+}
