@@ -5,6 +5,8 @@
     text-decoration: none;
     font-family: 'Montserrat', 'Poppins', sans-serif;
     box-sizing: border-box;
+    /* Global variabl */
+    --nav-height: 100px;
 }
 :any-link {
     cursor: pointer;
