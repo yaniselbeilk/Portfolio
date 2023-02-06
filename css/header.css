@@ -19,6 +19,13 @@ nav {
     align-items: center;
     width: 100%;
     pointer-events: none;
+    transition: all 0.5s ease;
+}
+nav.sticky {
+    padding: 10px 100px;
+    background: steelblue;
+    background-color: rgb(25, 25, 112, 0.6);
+    color: darkslategrey;
 }
 .logo {
    height: 50px; 
@@ -114,6 +121,7 @@ nav {
 #name {
     font-size: clamp(40px, 8vw, 80px);
     margin-top: 20px;
+    color: whitesmoke;
     opacity: 0;
     animation: slide-from-left;
     animation-delay: 0.8s;
@@ -155,8 +163,8 @@ nav {
     right: 0;
     text-align: center;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     opacity: 0;
     animation: 1s linear 1s slide-from-top, slide-chevron 2s linear infinite;
     animation-fill-mode: forwards

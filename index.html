@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/logo.ico" rel="shortcut icon" />
+    <link href="ressources/img/logo.ico" rel="shortcut icon" />
     <link href="css/global.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/header.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/about.css" rel="stylesheet" type="text/css" media="screen" />
     <title>Yanis El Beilk Portfolio</title>
     <script src="librairies/particlesjs/particles.js"></script>
     <script src="js/header.js"></script>
 </head>
 
 <body>
-    <header>
+<header id="home">
     <div id="particles"></div>
     <nav>
-        <a href="#"><img src="img/logo.ico" alt="Logo of Yanis EL BEILK" class="logo"/></a>
+        <a href="#"><img src="ressources/img/logo.ico" alt="Logo of Yanis EL BEILK" class="logo"/></a>
         <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Contacts</a></li>
         </ul>
-        <img src="img/menu.svg" alt="Button of the menu" id="menu-button" />
+        <img src="ressources/img/menu.svg" alt="Button of the menu" id="menu-button" />
     </nav>
     
     <div id="presentation">
@@ -34,11 +35,38 @@
         <span class="content-presentation" id="profession">I'm an IT engineer.</span>
         <p class="content-presentation" id="biography">
             I'm a 21 years old french student in the engineering school <a href="https://www.esme.fr/en/" target="_blank"/>ESME Sudria</a> and 
-            I study computer science.<br />
+            I study computer science.
             I'm looking for a 3-months/12-weeks internship abroad.
         </p>
     </div>
-    <img src="img/chevron-down.svg" alt="chevron directed at the bottom" id="chevron-bottom"/>
+    <img src="ressources/img/chevron-down.svg" alt="chevron directed at the bottom" id="chevron-bottom"/>
 </header>
+<main>
+    <section id="about">
+        <h2 id="about-title">Who am I?</h2>
+
+        <div id="about-content">
+            <p id="about-me">
+            Hello ! My name is Yanis EL BEILK, I'm 21 and I develop on my free time.
+            I like learning about science, IT and a lot more.
+            <br>
+            <br>
+            After my high school graduation in 2019, I wanted to learn more about computing, I entered in the <a href="https://en.univ-paris13.fr/" target="_blank">Sorbonne Paris North University</a>
+            and graduated in 2021. I had various courses in mathematics, artificial intelligence, network, cloud and web.
+            <br>
+            <br>
+            I wanted to keep learning in my field but also had interest in electronics and energy, I also wanted to gain professionnal experience.
+            After my graduation, I choose to pursuit my studies in an engineering school named <a href="https://www.esme.fr/en/" target="_blank">ESME Sudria</a>.
+            I discovered a lot of technologies and theorical concepts, I was able to put my knowledge in practice and collaboring with amazing people in different major.
+            <br>
+            <br>
+            Currently, I'm in my fourth year out of five of the engineering cycle in  <a href="https://en.wikipedia.org/wiki/Management_information_system" target="_blank">MIS</a> major and I'm also in apprenticeship as systems and network administrator at <a href="https://videomuseum.fr/en" target="_blank">Videomuseum</a>.
+
+            </p>
+            <img src="ressources/img/picture.jpg" alt="picture of Yanis El Beilk" id="picture" />
+        </div>
+    </section>
+</main>
+
 </body>
 </html>

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 const menuButton = document.getElementById("menu-button");
 const menu = document.getElementById("nav-links");
+const navbar = document.querySelector('nav');
 
 menuButton.addEventListener('click',()=>{
     menu.classList.toggle('mobile-menu');
@@ -17,5 +18,9 @@ window.addEventListener('resize', ()=>{
         menu.classList.toggle('mobile-menu', false);
         menu.style.removeProperty('transition');
     }
-});       
+});  
+window.addEventListener('scroll', ()=>{
+    navbar.classList.toggle('sticky', window.scrollY>0);
+});
+
 });
