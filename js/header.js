@@ -18,9 +18,19 @@ window.addEventListener('resize', ()=>{
         menu.classList.toggle('mobile-menu', false);
         menu.style.removeProperty('transition');
     }
-});  
+});
+let lastScrollY = window.scrollY;
 window.addEventListener('scroll', ()=>{
-    navbar.classList.toggle('sticky', window.scrollY>0);
+    //navbar.classList.toggle('sticky', window.scrollY>0);
+    if (window.scrollY == 0) {
+        navbar.classList.toggle('sticky', false);
+    } else if (lastScrollY < window.scrollY) {
+        navbar.classList.add('nav-hidden');
+    } else if (lastScrollY > window.scrollY) {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.toggle('sticky', true);
+    }
+    lastScrollY = window.scrollY;
 });
 
 });
