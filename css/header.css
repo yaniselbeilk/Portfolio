@@ -195,12 +195,12 @@ nav.nav-hidden {
             align-items: center;
             margin-left: 100%;
             pointer-events: auto;
+            gap: 8%;
         }
         #nav-links.mobile-menu {
-            margin-left: 30%;
+            transform: translateX(-100%);
         }
         #nav-links>li {
-            margin: 25px 0;
             font-size: 1.5em;
             font-weight: bold;
         }
