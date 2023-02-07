@@ -5,27 +5,28 @@ particlesJS.load('particles', 'assets/particles.json', function () {
 document.addEventListener('DOMContentLoaded', () => {
     
 const menuButton = document.getElementById("menu-button");
-const menu = document.getElementById("nav-links");
-const menuLink = menu.getElementsByTagName('a');
+const menuMobile = document.getElementById("navigation-bar-mobile");
+const exitMenuButton = document.getElementById("exit-button");
+const menuLinkMobile = menuMobile.getElementsByTagName('a');
 const navbar = document.querySelector('nav');
 
 navbar.classList.toggle('sticky', window.scrollY > 0);
 
 menuButton.addEventListener('click',()=>{
-    menu.classList.toggle('mobile-menu');
-    menu.style.transition = "all 0.5s ease";
+    menuMobile.classList.toggle('mobile-menu', true);
 });
-/*
-for(let i = 0; i<menuLink.length; i++) {
-    menuLink[i].addEventListener('click', ()=>{
-        menu.classList.toggle('mobile-menu', false);
+exitMenuButton.addEventListener('click', ()=> {
+    menuMobile.classList.toggle('mobile-menu', false);
+});
+for (let i = 0; i < menuLinkMobile.length; i++) {
+    menuLinkMobile[i].addEventListener('click', () => {
+        menuMobile.classList.toggle('mobile-menu', false);
     });
 }
-*/
-window.addEventListener('resize', ()=>{
+window.addEventListener('resize', () => {
     if (window.screen.width > 900) {
-        menu.classList.toggle('mobile-menu', false);
-        menu.style.removeProperty('transition');
+        menuMobile.classList.toggle('mobile-menu', false);
+        menuMobile.style.removeProperty('transition');
     }
 });
 

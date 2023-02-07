@@ -10,7 +10,7 @@ header {
     width: 100%;
     background: radial-gradient(ellipse at bottom, steelblue 0%, black 85%);
 }
-nav {
+#navigation-bar {
     position: fixed;
     z-index: 9;
     padding: 30px;
@@ -22,14 +22,19 @@ nav {
     pointer-events: none;
     transition: all 0.5s ease;
 }
-nav.sticky {
+
+#navigation-bar-mobile {
+    display: none;
+}
+
+#navigation-bar.sticky {
     padding: 30px;
     height: 75px;
     background: steelblue;
     background-color: rgb(25, 25, 112, 0.6);
     color: darkslategrey;
 }
-nav.nav-hidden {
+#navigation-bar.nav-hidden {
     transform: translateY(calc(-1*var(--nav-height)));
 }
 .logo {
@@ -182,29 +187,52 @@ nav.nav-hidden {
             vertical-align: middle;
         }
         #nav-links {
-            position: absolute;
+            display: none;
+        }
+        #navigation-bar-mobile {
+            position: fixed;
+            z-index: 10;
             top: 0;
             left: 0;
-            display: flex;
-            flex-direction: column;
-            width: 70%;
+            right: 0;
+            display: block;
+            width: 80%;
             height: 100vh;
+            background-color: midnightblue;
+            box-shadow: 50px -15px black;
+            /*
             backdrop-filter: blur(2px) brightness(60%);
             filter: drop-shadow(-10px 10px 4px #1fbfb8);
-            justify-content: center;
+            */
+            justify-content: space-between;
             align-items: center;
             margin-left: 100%;
             pointer-events: auto;
-            gap: 8%;
+            transition: all 0.5s ease;
         }
-        #nav-links.mobile-menu {
+        #exit-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            pointer-events: auto;
+        }
+        #nav-links-mobile {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+        }
+        #navigation-bar-mobile.mobile-menu {
             transform: translateX(-100%);
         }
-        #nav-links>li {
+        #nav-links-mobile>li {
             font-size: 1.5em;
             font-weight: bold;
         }
-        #nav-links>li>a {
+        #nav-links-mobile>li>a {
             color: white;
         }
         
