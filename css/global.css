@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: 'Montserrat', 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     /* Global variabl */
     --nav-height: 100px;
 }
