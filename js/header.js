@@ -1,14 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 particlesJS.load('particles', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    
 const menuButton = document.getElementById("menu-button");
 const menuMobile = document.getElementById("navigation-bar-mobile");
 const exitMenuButton = document.getElementById("exit-button");
 const menuLinkMobile = menuMobile.getElementsByTagName('a');
-const navbar = document.querySelector('nav');
+const navbar = document.getElementById("navigation-bar");
 
 navbar.classList.toggle('sticky', window.scrollY > 0);
 
@@ -23,6 +23,7 @@ for (let i = 0; i < menuLinkMobile.length; i++) {
         menuMobile.classList.toggle('mobile-menu', false);
     });
 }
+
 window.addEventListener('resize', () => {
     if (window.screen.width > 900) {
         menuMobile.classList.toggle('mobile-menu', false);
@@ -32,7 +33,6 @@ window.addEventListener('resize', () => {
 
 let lastScrollY = window.scrollY;
 window.addEventListener('scroll', ()=>{
-    //navbar.classList.toggle('sticky', window.scrollY>0);
     if (window.scrollY == 0) {
         navbar.classList.toggle('sticky', false);
     } else if (lastScrollY < window.scrollY) {
