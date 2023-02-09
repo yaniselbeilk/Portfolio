@@ -1,13 +1,20 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(/ressources/fonts/Ubuntu/Ubuntu-Regular.ttf) format('opentype');
+}
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Ubuntu', 'Montserrat', 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* Global variabl */
+    /* Global variable */
     --nav-height: 100px;
+    --shadow-navigation-bar: 2px;
+    --fadedarkblue: rgba(20, 20, 50, 0.9);
+    --grayblue: #3e4656;
 }
 :any-link {
     cursor: pointer;
