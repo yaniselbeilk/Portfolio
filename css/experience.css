@@ -1,7 +1,30 @@
 #experience {
     background-color: midnightblue;
+    padding: 100px 20% 50px;
 }
 #experience-title {
-    text-align: center;
-    font-size: 40px;
+    color: azure;
+}
+.experiences-presentations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.visual-content {
+    z-index: 2;
+    border-radius: 30px;
+    width: 630px;
+    height: 350px;
+    box-shadow: 0px 0px 20px black;
+}
+.experiences-description {
+    position: relative;
+    z-index: 1;
+    background-color: midnightblue;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 30px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: -70px;
 }
