@@ -1,6 +1,10 @@
 #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
     background-color: midnightblue;
-    padding: 100px 15% 50px;
+    padding: 100px 50px;
 }
 #experience-title {
     color: azure;
@@ -9,26 +13,48 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 70%;
 }
 .visual-content {
-    z-index: 2;
+    z-index: 0;
     border-radius: 30px;
     box-shadow: 0px 0px 20px black;
+    width: 500px;
 }
 .experience-information {
-    margin-left: -5%;
-}
-.experience-principal-information {
+    margin-left: -100px;
     text-align: end;
 }
+.experience-principal-information {
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+.job {
+    display: inline-block;
+    color: cornflowerblue;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.principal-information {
+    color: aliceblue;
+    font-size: 18px;
+}
 .experience-description {
-    position: relative;
-    z-index: 1;
     font-size: 16px;
     background-color: midnightblue;
     color: white;
     box-shadow: 0px 0px 20px black;
     border-radius: 30px;
-    padding: 5% 5% 5% 15%;
-    text-align: end;
+    padding: 5% 5% 5% 120px;
+}
+@media screen and (max-width: 1100px) {
+    .visual-content {
+        width: 300px;
+    }
+    .experience-description {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 900px) {
+    
 }
