@@ -25,17 +25,16 @@
     margin-left: -100px;
     text-align: end;
 }
-.experience-principal-information {
+.experience-main-information {
     margin-right: 5%;
     margin-bottom: 30px;
 }
 .job {
-    display: inline-block;
     color: cornflowerblue;
     font-size: 25px;
     margin-bottom: 20px;
 }
-.principal-information {
+.main-information {
     color: aliceblue;
     font-size: 18px;
 }
