@@ -9,3 +9,10 @@
 #title-projects {
     color: azure;
 }
+
+.projects-presentation {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 70%;
+}
