@@ -4,7 +4,7 @@
     align-items: center;
     gap: 80px;
     padding: 100px 50px;
-    background-color: #0066FF;
+    background-color: var(--blue);
 }
 #title-projects {
     color: azure;
@@ -15,4 +15,29 @@
     flex-direction: row-reverse;
     align-items: center;
     width: 70%;
+}
+.projects-information {
+    margin-right: -100px;
+    text-align: start;
+}
+.projects-main-information {
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+.projects-main-information>a {
+    color: lightsteelblue;
+}
+.projects-name>a {
+    color: cornflowerblue;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: unset;
+}
+.projects-description {
+    font-size: 16px;
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 30px;
+    padding: 5% calc(100px + 5%) 5% 5%;
 }

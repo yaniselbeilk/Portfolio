@@ -15,6 +15,7 @@
     --shadow-navigation-bar: 2px;
     --fadedarkblue: rgba(20, 20, 50, 0.9);
     --grayblue: #3e4656;
+    --blue: #0066FF;
 }
 :any-link {
     cursor: pointer;
