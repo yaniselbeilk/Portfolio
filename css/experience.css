@@ -19,7 +19,7 @@
     z-index: 0;
     border-radius: 30px;
     box-shadow: 0px 0px 20px black;
-    width: 500px;
+    width: clamp(200px, 40%, 500px);
 }
 .experience-information {
     margin-left: -100px;
@@ -47,14 +47,61 @@
     border-radius: 30px;
     padding: 5% 5% 5% 120px;
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 700px) {
+    .experience-presentation {
+        position: relative;
+        isolation: isolate;
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px black;
+        width: 100%;
+    }
+    .experience-presentation::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: black;
+        opacity: .8;
+        border-radius: 30px;
+    }
+    .experience-information {
+        text-align: start;
+        margin: 0;
+        padding: 8%;
+    }
     .visual-content {
-        width: 300px;
+        display: none;
     }
     .experience-description {
-        height: 200px;
+        background-color: unset;
+        box-shadow: none;
+        text-align: start;
+        padding: 0;
+    }
+    #videomuseum {
+        background: url(/ressources/images/videomuseum-logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #capj {
+        background: url(/ressources/images/mairie-Saint-Ouen.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #omega-agency {
+        background: url(/ressources/images/Omega-Agency-logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
-@media screen and (max-width: 900px) {
-    
+
+@media  screen and (max-width: 500px) {
+    .experience-presentation {
+        background: unset;
+        background-color: midnightblue;
+    }
 }
