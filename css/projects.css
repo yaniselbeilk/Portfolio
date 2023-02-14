@@ -19,8 +19,11 @@
     border-radius: 30px;
     padding: 5% calc(100px + 5%) 5% 5%;
 }
-.gitlab-logo {
-    width: 50px;
+.gitlab-logo, .github-logo {
+    width: 30px;
+}
+.gitlab-logo:hover {
+    stroke: var(--orange-gitlab);
 }
 
 /*
@@ -45,23 +48,24 @@ Visual content on the left:
 Visual content on the right :
 - Dotfiles
 */
-#dotfiles {
+#dotfiles, #threes{
     flex-direction: row-reverse;
 }
 
-#dotfiles-information {
+#dotfiles-information, #threes-information {
     text-align: start;
     margin-right: -100px;
 }
 
-#dotfiles-description {
+#dotfiles-description, #threes-description {
     padding: 5% calc(100px + 5%) 5% 5%;
 }
 @media screen and (max-width: 1000px) {
 
     #portfolio-information,
     #dotfiles-information,
-    #beballer-information {
+    #beballer-information,
+    #threes-information {
         align-items: start;
         text-align: start;
         margin: 0;
@@ -70,7 +74,8 @@ Visual content on the right :
 
     #portfolio-description,
     #dotfiles-description,
-    #beballer-description {
+    #beballer-description,
+    #threes-description {
         padding: 0;
         background-color: unset;
         box-shadow: none;
@@ -78,7 +83,8 @@ Visual content on the right :
 
     #portfolio::after,
     #dotfiles::after,
-    #beballer::after {
+    #beballer::after,
+    #threes::after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -101,5 +107,8 @@ Visual content on the right :
     
     #beballer::after {
         background-image: url(/ressources/images/projects/beballer.png);
+    }
+    #threes::after {
+        background-image: url(/ressources/images/projects/threes.png);
     }
 }
