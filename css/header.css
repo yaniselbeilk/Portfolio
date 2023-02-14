@@ -92,7 +92,7 @@
     color: lightsteelblue;
     font-weight: bold;
 }
-#menu-button {
+#menu-burger-icon {
     display: none;
     position: relative;
     width: 50px;
@@ -158,11 +158,12 @@
     color: cyan;
 }
 
-#chevron-bottom {
+#chevron-bottom-icon {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    pointer-events: auto;
     bottom: 5%;
     left: 0;
     right: 0;
@@ -173,10 +174,16 @@
     animation: 1s linear 1s slide-from-top, slide-chevron 2s linear infinite;
     animation-fill-mode: forwards
 }
+#chevron-bottom-icon>#SVGRepo_iconCarrier>path:hover {
+    fill: lightsteelblue;
+}
+#chevron-bottom-icon:hover {
+    animation-play-state: paused;
+}
 
 @media screen and (max-width: 900px) {
 
-        #menu-button {
+        #menu-burger-icon {
             display: flex;
             vertical-align: middle;
         }
@@ -200,7 +207,7 @@
             pointer-events: auto;
             transition: all 0.5s ease;
         }
-        #exit-button {
+        #menu-exit-icon {
             position: absolute;
             top: 20px;
             right: 20px;

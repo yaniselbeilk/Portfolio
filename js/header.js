@@ -4,9 +4,10 @@ particlesJS.load('home', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-const menuButton = document.getElementById("menu-button");
+
+const menuButton = document.getElementById("menu-burger-icon");
 const menuMobile = document.getElementById("navigation-bar-mobile");
-const exitMenuButton = document.getElementById("exit-button");
+const exitMenuButton = document.getElementById("menu-exit-icon");
 const menuLinkMobile = menuMobile.getElementsByTagName('a');
 const navbar = document.getElementById("navigation-bar");
 
