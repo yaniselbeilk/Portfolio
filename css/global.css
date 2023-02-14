@@ -26,3 +26,66 @@
     font-size: 40px;
     margin-bottom: 5%;
 }
+
+.experience-presentation, .projects-presentation{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.visual-content {
+    z-index: 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px black;
+    width: clamp(200px, 40%, 500px);
+}
+
+.experience-information, .projects-information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+}
+
+.job-title, .projects-title {
+    color: cornflowerblue;
+    font-size: 25px;
+}
+
+.main-information {
+    font-size: 18px;
+}
+.main-information>a {
+    color: lightsteelblue;
+}
+
+.experience-description {
+    font-size: 16px;
+    background-color: midnightblue;
+    color: white;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .experience-presentation,
+    .projects-presentation {
+        position: relative;
+        isolation: isolate;
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px black;
+        width: 100%;
+    }
+
+    .visual-content {
+        display: none;
+    }
+
+    .experience-description,
+    .projects-description {
+        background-color: unset;
+        box-shadow: none;
+    }
+
+}

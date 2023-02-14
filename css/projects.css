@@ -9,32 +9,8 @@
 #title-projects {
     color: azure;
 }
-
-.projects-presentation {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 70%;
-}
-.projects-information {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    margin-right: -100px;
-    text-align: start;
-    color: aliceblue;
-}
-.projects-main-information, .language {
-    margin-left: 5%;
-}
 .language {
     color: aquamarine;
-}
-.projects-name {
-    color: cornflowerblue;
-    font-size: 25px;
-    margin-bottom: 20px;
 }
 .projects-description {
     font-size: 16px;
@@ -45,4 +21,85 @@
 }
 .gitlab-logo {
     width: 50px;
+}
+
+/*
+Visual content on the left:
+- Portfolio
+- Beballer
+*/
+#portfolio, #beballer {
+    flex-direction: row;
+}
+
+#portfolio-information, #beballer-information {
+    text-align: end;
+    align-items: end;
+    margin-left: -100px;
+}
+
+#portfolio-description, #beballer-description {
+    padding: 5% 5% 5% calc(100px + 5%);
+}
+/*
+Visual content on the right :
+- Dotfiles
+*/
+#dotfiles {
+    flex-direction: row-reverse;
+}
+
+#dotfiles-information {
+    text-align: start;
+    margin-right: -100px;
+}
+
+#dotfiles-description {
+    padding: 5% calc(100px + 5%) 5% 5%;
+}
+@media screen and (max-width: 1000px) {
+
+    #portfolio-information,
+    #dotfiles-information,
+    #beballer-information {
+        align-items: start;
+        text-align: start;
+        margin: 0;
+        padding: 8%;
+    }
+
+    #portfolio-description,
+    #dotfiles-description,
+    #beballer-description {
+        padding: 0;
+        background-color: unset;
+        box-shadow: none;
+    }
+
+    #portfolio::after,
+    #dotfiles::after,
+    #beballer::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: black;
+        opacity: .2;
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #portfolio::after {
+        background-image: url(/ressources/images/projects/portfolio.png);
+    }
+
+    #dotfiles::after {
+        background-image: url(/ressources/images/projects/dotfiles.png);
+    }
+    
+    #beballer::after {
+        background-image: url(/ressources/images/projects/beballer.png);
+    }
 }

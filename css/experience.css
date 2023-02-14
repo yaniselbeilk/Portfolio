@@ -3,77 +3,51 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    background-color: midnightblue;
     padding: 100px 50px;
+    background-color: midnightblue;
 }
 #experience-title {
     color: azure;
 }
-.experience-presentation {
-    display: flex;
+/*
+Visual content on the left :
+- Videomuseum
+*/
+#videomuseum {
     flex-direction: row;
-    align-items: center;
-    width: 70%;
 }
-.visual-content {
-    z-index: 0;
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px black;
-    width: clamp(200px, 40%, 500px);
-}
-.experience-information {
-    color: aliceblue;
-    margin-left: -100px;
+#videomuseum-information {
     text-align: end;
+    margin-left: -100px;
 }
-.experience-main-information {
-    margin-right: 5%;
-    margin-bottom: 30px;
-}
-.job {
-    color: cornflowerblue;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-.main-information {
-    font-size: 18px;
-}
-.main-information>a {
-    color: lightsteelblue;
-}
-.experience-description {
-    font-size: 16px;
-    background-color: midnightblue;
-    color: white;
-    box-shadow: 0px 0px 20px black;
-    border-radius: 30px;
+#videomuseum-description {
     padding: 5% 5% 5% calc(100px + 5%);
+}
+/*
+Visual content on the right :
+- Omega Agency
+*/
+#omega-agency {
+    flex-direction: row-reverse;
+}
+#omega-agency-information {
+    text-align: start;
+    margin-right: -100px;
+}
+#omega-agency-description {
+    padding: 5% calc(100px + 5%) 5% 5%;
 }
 
 @media screen and (max-width: 1000px) {
-    .experience-presentation {
-        position: relative;
-        isolation: isolate;
-        border-radius: 30px;
-        box-shadow: 0px 0px 20px black;
-        width: 100%;
-    }
-    .experience-information {
+    #videomuseum-information, #omega-agency-information {
         text-align: start;
         margin: 0;
         padding: 8%;
     }
-    .visual-content {
-        display: none;
-    }
-    .experience-description {
-        background-color: unset;
-        box-shadow: none;
-        text-align: start;
+    #videomuseum-description, #omega-agency-description {
         padding: 0;
     }
-
-    #videomuseum::after {
+    #videomuseum::after, #omega-agency::after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -81,35 +55,14 @@
         background: black;
         opacity: .2;
         border-radius: 30px;
-        background-image: url(/ressources/images/experience/videomuseum-logo.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #capj::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        inset: 0;
-        background: black;
-        opacity: .2;
-        border-radius: 30px;
-        background-image: url(/ressources/images/experience/mairie-Saint-Ouen.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #videomuseum::after {
+        background-image: url(/ressources/images/experience/videomuseum-logo.jpg);
     }
     #omega-agency::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        inset: 0;
-        background: black;
-        opacity: .2;
-        border-radius: 30px;
         background-image: url(/ressources/images/experience/Omega-Agency-logo.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
