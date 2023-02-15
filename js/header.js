@@ -1,9 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-
 particlesJS.load('home', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
+document.addEventListener('DOMContentLoaded', () => {
 
 const menuButton = document.getElementById("menu-burger-icon");
 const menuMobile = document.getElementById("navigation-bar-mobile");
