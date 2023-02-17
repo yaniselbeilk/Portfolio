@@ -16,6 +16,9 @@
     --fadedarkblue: rgba(20, 20, 50, 0.9);
     --grayblue: #3e4656;
     --blue: #151b46;
+    --blue-azure: #97b8f3;
+    --light-yellow: #f1f1ac;
+    --slight-dark-yellow: #dfdf71;
     --orange-gitlab: #E24329;
 }
 :any-link {
