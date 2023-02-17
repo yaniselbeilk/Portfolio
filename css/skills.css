@@ -1,17 +1,17 @@
 #skills {
     padding: 100px 50px;
-    background-color: var(--blue-azure);
+    background-color: steelblue;
 }
 #skills-box {
     display: flex;
-    gap: 80px;
+    gap: 60px;
     box-shadow: 0px 0px 20px black;
     background-color: white;
     border-radius: 30px;
     padding: 50px;
     margin: auto;
-    width: 80%;
-    min-height: 600px;
+    width: min(1200px, 80%);
+    min-height: 700px;
     text-align: center;
 }
 #title-skills-category {
@@ -19,21 +19,47 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
+    gap: 10px;
 }
-#title-skills-category>h3 {
-    padding: 25px;
+#title-skills-category>button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 20px var(--grayblue);
+    border-radius: 30px;
+    border: solid;
+    width: 250px;
+    font-size: 15px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+#title-skills-category>button.button-skills {
+    background-color: var(--blue-azure);
+}
+#title-skills-category>button:hover {
+    background-color: var(--blue-azure);
+}
+#title-skills-category>button:active {
+    background-color: cornflowerblue;
+}
+#software-development {
+    display: contents;
+}
+.main-container {
+    text-align: center;
+    width: 100%;
 }
 .skills-logo {
     width: 64px;
     height: 64px;
 }
 
-.container {
+.container-skills {
     display: none;
     font-size: 0;
 }
 
-.container div {
+.container-skills div {
     background-color: var(--light-yellow);
     width: 110px;
     margin: 10px;
@@ -42,18 +68,15 @@
     font-size: initial;
     padding: 15px;
 }
-#software-development {
-    display: contents;
-}
-.container div:hover {
+.container-skills div:hover {
     background-color: var(--slight-dark-yellow);
 }
 
-.container a {
+.container-skills a {
     display: inline-block;
     color: black;
 }
-.container a div{
+.container-skills a div{
     display: flex;
     flex-direction: column;
     align-items: center;
