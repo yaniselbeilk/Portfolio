@@ -174,9 +174,6 @@
     animation: 1s linear 1s slide-from-top, slide-chevron 2s linear infinite;
     animation-fill-mode: forwards
 }
-#chevron-bottom-icon>#SVGRepo_iconCarrier>path:hover {
-    fill: lightsteelblue;
-}
 #chevron-bottom-icon:hover {
     animation-play-state: paused;
 }

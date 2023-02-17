@@ -11,6 +11,7 @@
     <link href="css/about.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/experience.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/projects.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/skills.css" rel="stylesheet" type="text/css" media="screen" />
     <title>Yanis El Beilk Portfolio</title>
     <script src="librairies/particlesjs/particles.js"></script>
     <script src="js/header.js"></script>
@@ -28,22 +29,10 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
-        <svg id="menu-burger-icon" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#ffffff" stroke-width="0.00024000000000000003">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" fill="#ffffff"/> </g>    
-        </svg>
+        <img src="ressources/images/design/menu-burger.svg" alt="menu burger icon" id="menu-burger-icon" />
     </nav>
     <nav id="navigation-bar-mobile">
-        <svg id="menu-exit-icon" fill="#ffffff" viewBox="0 0 24 24" id="sign-out-2" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-            <g id="SVGRepo_iconCarrier">
-            <polyline id="primary" points="18 9 21 12 18 15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
-            <line id="primary-2" data-name="primary" x1="21" y1="12" x2="7" y2="12" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
-            <path id="primary-3" data-name="primary" d="M14,16v3a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V5A1,1,0,0,1,4,4h9a1,1,0,0,1,1,1V8" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
-            </g>
-        </svg>
+    <img src="ressources/images/design/sign-out.svg" alt="sign out icon" id="menu-exit-icon" />
         <ul id="nav-links-mobile">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -65,11 +54,7 @@
         </p>
     </div>
     <a href="#about">
-        <svg id="chevron-bottom-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.8839 15.5303C12.3957 16.0185 11.6043 16.0185 11.1161 15.5303L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#ffffff"/> </g>
-        </svg>
+        <img src="ressources/images/design/chevron-down.svg" alt="chevron down icon" id="chevron-bottom-icon" />
     </a>
 </header>
 <main>
@@ -77,6 +62,7 @@
         <h2 class="title-section" id="about-title">About me !</h2>
 
         <div id="about-content">
+            <img src="ressources/images/picture.jpg" alt="picture of Yanis El Beilk" id="picture" />
             <p id="about-me">
             Hello ! My name is Yanis EL BEILK, I'm 21 and I develop on my free time.
             I like learning about science, IT and a lot more.
@@ -94,7 +80,7 @@
             Currently, I'm in my fourth year out of five of the engineering cycle in <a href="https://en.wikipedia.org/wiki/Management_information_system" target="_blank">MIS</a> major at the ESME and I'm also in apprenticeship as a systems and network administrator at <a href="https://videomuseum.fr/en" target="_blank">Videomuseum</a>.
 
             </p>
-            <img src="ressources/images/picture.jpg" alt="picture of Yanis El Beilk" id="picture" />
+            
         </div>
     </section>
     <div class="spacer layer-midnightblue"></div>
@@ -183,7 +169,22 @@
                     The specifications, the writing of the report, the meetings with the clients and the development management
                     were managed by my team and myself.
                 </p>
-                <div class="language">Kotlin - XML - Gradle</div>
+                <div class="language">Kotlin - XML - Firebase - Jira</div>
+        
+            <svg class="internet-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+                <path d="M4 15L20 15" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 9L20 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="12" r="9" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+            d="M12.0004 20.8182L11.2862 21.5181C11.4742 21.7101 11.7317 21.8182 12.0004 21.8182C12.2691 21.8182 12.5265 21.7101 12.7146 21.5181L12.0004 20.8182ZM12.0004 3.18188L12.7146 2.48198C12.5265 2.29005 12.2691 2.18188 12.0004 2.18188C11.7317 2.18188 11.4742 2.29005 11.2861 2.48198L12.0004 3.18188ZM14.6004 12.0001C14.6004 15.1611 13.3373 18.0251 11.2862 20.1183L12.7146 21.5181C15.1173 19.0662 16.6004 15.7053 16.6004 12.0001H14.6004ZM11.2861 3.88178C13.3373 5.97501 14.6004 8.83903 14.6004 12.0001H16.6004C16.6004 8.29478 15.1173 4.93389 12.7146 2.48198L11.2861 3.88178ZM9.40039 12.0001C9.40039 8.83903 10.6634 5.97501 12.7146 3.88178L11.2861 2.48198C8.88347 4.93389 7.40039 8.29478 7.40039 12.0001H9.40039ZM12.7146 20.1183C10.6634 18.0251 9.40039 15.1611 9.40039 12.0001H7.40039C7.40039 15.7053 8.88348 19.0662 11.2862 21.5181L12.7146 20.1183Z"
+            fill="#ffffff" />
+            </g>
+            </svg>
+
             </div>
         </div>
 
@@ -210,7 +211,320 @@
                 </a>
             </div>
         </div>
+    </section>
+    <div class="spacer layer-midnightblue-to-azure"></div>
+    <section id="skills">
+        <h2 class="title-section">My box skills !</h2>
+        
+    <div id="skills-box">
+        <div id="title-skills-category">
+            <h3>Software Development</h3>
+            <h3>Web Development</h3>
+            <h3>Mobile Development</h3>
+            <h3>System Administration</h3>
+            <h3>Development tools</h3>
+            <h3>Design</h3>
+        </div>
+        
+        <div class="main-container">
 
+        <div class="container" id="software-development">
+            
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+            <div>    
+                <img src="ressources/images/skills/c_logo.svg" alt="C programming language logo" class="skills-logo"/>
+                <span>C</span>
+            </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/cpp_logo.svg" alt="C++ programming language logo" class="skills-logo" />
+                <span>C++</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/java_logo.svg" alt="Java programming language logo" class="skills-logo" />
+                    <span>Java</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                <img src="ressources/images/skills/bash_logo.svg" alt="Bash programming language logo" class="skills-logo" />
+                <span>Bash</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/python_logo.svg" alt="Python programming language logo" class="skills-logo" />
+                    <span>Python</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/rust_logo.svg" alt="Rust programming language logo" class="skills-logo" />
+                    <span>Rust</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/lua_logo.svg" alt="Lua programming language logo" class="skills-logo" />
+                <span>Lua</span>
+                </div>
+            </a>
+       </div>
+
+
+        <div class="container" id="web-development">
+            <a>
+                <div>
+                    <img src="ressources/images/skills/html_logo.svg" alt="HTML programming language logo" class="skills-logo" />
+                    <span>HTML</span>
+                </div>
+            </a>
+        
+            <a>
+                <div>
+                    <img src="ressources/images/skills/css_logo.svg" alt="CSS programming language logo" class="skills-logo" />
+                    <span>CSS</span>
+                </div>
+            </a>
+
+             <a>
+                <div>
+                    <img src="ressources/images/skills/javascript_logo.svg" alt="JavaScript programming language logo" class="skills-logo" />
+                    <span>JavaScript</span>
+                </div>
+            </a> 
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/typescript_logo.svg" alt="TypeScript programming language logo" class="skills-logo" />
+                    <span>TypeScript</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/php_logo.svg" alt="PHP programming language logo" class="skills-logo" />
+                    <span>PHP</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/symfony_logo.svg" alt="Symfony programming language logo" class="skills-logo" />
+                    <span>Symfony</span>
+                </div>
+            </a>
+            <a>
+                <div>
+                    <img src="ressources/images/skills/jquery_logo.svg" alt="Jquery logo" class="skills-logo" />
+                    <span>Jquery</span>
+                </div>
+            </a>
+            <a>
+                <div>
+                    <img src="ressources/images/skills/vuejs_logo.svg" alt="Vue.js logo" class="skills-logo" />
+                    <span>Vue.js</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/socketio_logo.svg" alt="socketio logo" class="skills-logo" />
+                    <span>Socket.io</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/mysql_logo.svg" alt="MySQL logo" class="skills-logo" />
+                    <span>MySQL</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/postgresql_logo.svg" alt="PostgreSQL logo" class="skills-logo" />
+                    <span>PostgreSQL</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/nodejs_logo.svg" alt="Nodejs logo" class="skills-logo" />
+                    <span>Node.js</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="container" id="mobile-development">
+
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/java_logo.svg" alt="Java logo" class="skills-logo" />
+                    <span>Java</span>
+                </div>
+            </a>
+            <a>
+                <div>
+                    <img src="ressources/images/skills/kotlin_logo.svg" alt="Kotlin logo" class="skills-logo" />
+                    <span>Kotlin</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/xml_logo.svg" alt="XML logo" class="skills-logo" />
+                    <span>XML</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/flutter_logo.svg" alt="Flutter logo" class="skills-logo" />
+                    <span>Flutter</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/firebase_logo.svg" alt="Firebase logo" class="skills-logo" />
+                    <span>Firebase</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/mysql_logo.svg" alt="MySQL logo" class="skills-logo" />
+                    <span>MySQL</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="container" id="system-administration">
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/linux_logo.svg" alt="Linux logo" class="skills-logo" />
+                    <span>Linux</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/ansible_logo.svg" alt="Ansible logo" class="skills-logo" />
+                    <span>Ansible</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/nginx_logo.svg" alt="Nginx logo" class="skills-logo" />
+                    <span>Nginx</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/apache_logo.svg" alt="Apache logo" class="skills-logo" />
+                    <span>Apache</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/ssh_logo.svg" alt="SSH logo" class="skills-logo" />
+                    <span>SSH</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/proxmox_logo.svg" alt="Proxmox logo" class="skills-logo" />
+                    <span>Proxmox</span>
+                </div>
+            </a>
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/jenkins_logo.svg" alt="Jenkins logo" class="skills-logo" />
+                    <span>Jenkins</span>
+                </div>
+            </a>
+
+        </div>
+    
+        <div class="container" id="development-tools">
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/git_logo.svg" alt="Git logo" class="skills-logo" />
+                    <span>Git</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/vim_logo.svg" alt="Vim logo" class="skills-logo" />
+                    <span>Vim</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/jira_logo.svg" alt="Jira logo" class="skills-logo" />
+                    <span>Jira</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="container" id="design">
+
+            <a>
+                <div>
+                    <img src="ressources/images/skills/penpot_logo.svg" alt="Penpot logo" class="skills-logo" />
+                    <span>Penpot</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/gimp_logo.svg" alt="Gimp logo" class="skills-logo" />
+                    <span>Gimp</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/kdenlive_logo.svg" alt="Kdenlive logo" class="skills-logo" />
+                    <span>Kdenlive</span>
+                </div>
+            </a>
+            
+            <a>
+                <div>
+                    <img src="ressources/images/skills/inkscape_logo.svg" alt="Inkscape logo" class="skills-logo" />
+                    <span>Inkscape</span>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+    </div>
     </section>
 
 </main>    
