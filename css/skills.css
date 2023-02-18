@@ -100,7 +100,11 @@
     }
 
     .title-skills-mobile {
-        display: contents;
+        display: block;
+        font-size: 20px;
+        color: lightblue;
+        padding-top: 30px;
+        padding-bottom: 60px;
     }
     .container-skills {
         display: block;
@@ -110,7 +114,8 @@
         padding: 5px;
     }
     .container-skills div {
-        display: contents;
+        display: block;
+        animation: unset;
     }
 }
 
