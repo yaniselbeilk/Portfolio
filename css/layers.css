@@ -6,12 +6,15 @@
     background-size: cover;
 }
 
-.layer-midnightblue {
-    background-image: url('/ressources/images/design/wave-midnightblue.svg');
+.layer-azure-midnightblue {
+    background-image: url('/ressources/images/design/wave-azure-midnightblue.svg')
 }
-.layer-grayblue {
-    background-image: url('/ressources/images/design/wave-blue.svg');
+.layer-midnightblue-darkslateblue {
+    background-image: url('/ressources/images/design/wave-midnightblue-darkslateblue.svg');
 }
-.layer-midnightblue-to-azure {
-    background-image: url('/ressources/images/design/wave-midnightblue-to-azure.svg');
+.layer-darkslateblue-steelblue {
+    background-image: url('/ressources/images/design/wave-darkslateblue-steelblue.svg');
+}
+.layer-steelblue-lightblue {
+    background-image: url('/ressources/images/design/wave-steelblue-lightblue.svg');
 }

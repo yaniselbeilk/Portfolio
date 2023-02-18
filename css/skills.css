@@ -27,8 +27,7 @@
     background-color: aliceblue;
     box-shadow: 0px 0px 20px var(--grayblue);
     border-radius: 30px;
-    border: solid;
-    width: 250px;
+    max-width: 250px;
     font-size: 15px;
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -42,8 +41,8 @@
 #title-skills-category>button:active {
     background-color: cornflowerblue;
 }
-#software-development {
-    display: contents;
+.title-skills-mobile {
+    display: none;
 }
 .main-container {
     text-align: center;
@@ -58,6 +57,9 @@
     display: none;
     font-size: 0;
 }
+.container-skills.skills-visible {
+    display: contents;
+}
 
 .container-skills div {
     background-color: var(--light-yellow);
@@ -67,6 +69,9 @@
     display: inline-block;
     font-size: initial;
     padding: 15px;
+    animation: slide-from-bottom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 .container-skills div:hover {
     background-color: var(--slight-dark-yellow);
@@ -81,4 +86,41 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #title-skills-category {
+        display: none;
+    }
+    #skills-box {
+        background: unset;
+        box-shadow: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .title-skills-mobile {
+        display: contents;
+    }
+    .container-skills {
+        display: block;
+        background-color: white;
+        box-shadow: 0px 0px 20px black;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .container-skills div {
+        display: contents;
+    }
+}
+
+@keyframes slide-from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

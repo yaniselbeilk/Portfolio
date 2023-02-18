@@ -13,10 +13,12 @@
     /* Global variable */
     --nav-height: 100px;
     --shadow-navigation-bar: 2px;
-    --fadedarkblue: rgba(20, 20, 50, 0.9);
+    --fadedarkblue: rgba(0, 0, 30, 0.9);
     --grayblue: #3e4656;
-    --blue: #151b46;
+    --midnightblue: #151b46;
+    --darkslateblue: #2c3368;
     --blue-azure: #97b8f3;
+    --light-blue: #97b8f3;
     --light-yellow: #f1f1ac;
     --slight-dark-yellow: #dfdf71;
     --orange-gitlab: #E24329;
@@ -65,7 +67,7 @@
 
 .experience-description {
     font-size: 16px;
-    background-color: midnightblue;
+    background-color: var(--blue);
     color: white;
     box-shadow: 0px 0px 20px black;
     border-radius: 30px;
