@@ -77,7 +77,7 @@
     background-color: var(--slight-dark-yellow);
 }
 .container-skills.skills-visible {
-    display: contents;
+    display: block;
 }
 
 @media screen and (max-width: 1000px) {
