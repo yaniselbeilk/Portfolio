@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 var indexButton = 0
 
-if (window.screen.width >= 1000) {
+if (window.screen.width > 1000) {
     titleSkillsCategory[indexButton].classList.toggle('button-skills', true);
     containerSkills[indexButton].classList.toggle('skills-visible', true);
 }
@@ -24,7 +24,7 @@ for (let index = 0; index < titleSkillsCategory.length; index++) {
 }
 
 window.addEventListener('resize', () => {
-    if (window.screen.width < 1000) {
+    if (window.screen.width <= 1000) {
         for (let index = 0; index < containerSkills.length; index++) {
             containerSkills[index].classList.toggle('skills-visible', false);   
         }

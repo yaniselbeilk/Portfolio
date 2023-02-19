@@ -1,5 +1,5 @@
 #skills {
-    padding: 100px 50px;
+    padding: 100px 30px;
     background-color: steelblue;
 }
 #skills-box {
@@ -57,35 +57,27 @@
     display: none;
     font-size: 0;
 }
-.container-skills.skills-visible {
-    display: contents;
-}
-
-.container-skills div {
+.container-skills a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     background-color: var(--light-yellow);
+    color: black;
     width: 110px;
     margin: 10px;
     border-radius: 30px;
-    display: inline-block;
     font-size: initial;
     padding: 15px;
     animation: slide-from-bottom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-.container-skills div:hover {
+.container-skills a:hover {
     background-color: var(--slight-dark-yellow);
 }
-
-.container-skills a {
-    display: inline-block;
-    color: black;
-}
-.container-skills a div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.container-skills.skills-visible {
+    display: contents;
 }
 
 @media screen and (max-width: 1000px) {
@@ -103,8 +95,8 @@
         display: block;
         font-size: 20px;
         color: lightblue;
-        padding-top: 30px;
-        padding-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
     .container-skills {
         display: block;
@@ -113,8 +105,8 @@
         border-radius: 20px;
         padding: 5px;
     }
-    .container-skills div {
-        display: block;
+    .container-skills a {
+        display: inline-flex;
         animation: unset;
     }
 }
