@@ -1,11 +1,8 @@
-/*
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu-Regular.ttf') format('opentype');
-    src: url('https://yaniselbeilk.gitlab.io/ressources/fonts/Ubuntu/Ubuntu-Regular.ttf') format('opentyp'), 
-    url('/ressources/fonts/Ubuntu/Ubuntu-Regular.ttf') format('opentype');
+    src: url('/ressources/fonts/Ubuntu/Ubuntu-Regular.ttf') format('opentype');
 }
-*/
 * {
     margin: 0;
     padding: 0;
