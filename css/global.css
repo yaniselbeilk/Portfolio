@@ -135,3 +135,9 @@
     transform: translateY(50px) translateX(-75px);
     animation: 0.5s opacity-tooltip;
 }
+
+@media screen and (max-width: 1000px) {
+    .tooltip::before, .tooltip:hover::after {
+        display: none;
+    }
+}

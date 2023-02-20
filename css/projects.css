@@ -67,6 +67,12 @@ Visual content on the right :
     padding: 5% calc(100px + 5%) 5% 5%;
 }
 @media screen and (max-width: 1000px) {
+    .github-logo:hover, .gitlab-logo:hover {
+        stroke: white;
+    }
+    .internet-logo:hover {
+        fill: white;
+    }
 
     #portfolio-information,
     #dotfiles-information,
@@ -104,17 +110,17 @@ Visual content on the right :
     }
 
     #portfolio::after {
-        background-image: url(/ressources/images/projects/portfolio.png);
+        background-image: url(../ressources/images/projects/portfolio.png);
     }
 
     #dotfiles::after {
-        background-image: url(/ressources/images/projects/dotfiles.png);
+        background-image: url(../ressources/images/projects/dotfiles.png);
     }
     
     #beballer::after {
-        background-image: url(/ressources/images/projects/beballer.png);
+        background-image: url(../ressources/images/projects/beballer.png);
     }
     #threes::after {
-        background-image: url(/ressources/images/projects/threes.png);
+        background-image: url(../ressources/images/projects/threes.png);
     }
 }
