@@ -7,14 +7,14 @@
 }
 
 .layer-azure-midnightblue {
-    background-image: url('/ressources/images/design/wave-azure-midnightblue.svg');
+    background-image: url('../ressources/images/design/wave-azure-midnightblue.svg');
 }
 .layer-midnightblue-darkslateblue {
-    background-image: url('/ressources/images/design/wave-midnightblue-darkslateblue.svg');
+    background-image: url('../ressources/images/design/wave-midnightblue-darkslateblue.svg');
 }
 .layer-darkslateblue-steelblue {
-    background-image: url('/ressources/images/design/wave-darkslateblue-steelblue.svg');
+    background-image: url('../ressources/images/design/wave-darkslateblue-steelblue.svg');
 }
 .layer-steelblue-lightblue {
-    background-image: url('/ressources/images/design/wave-steelblue-lightblue.svg');
+    background-image: url('../ressources/images/design/wave-steelblue-lightblue.svg');
 }
