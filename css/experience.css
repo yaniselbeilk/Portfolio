@@ -61,10 +61,10 @@ Visual content on the right :
         background-size: cover;
     }
     #videomuseum::after {
-        background-image: url(../ressources/images/experience/videomuseum-logo.jpg);
+        background-image: url("../ressources/images/experience/videomuseum-logo.jpg");
     }
     #omega-agency::after {
-        background-image: url(../ressources/images/experience/Omega-Agency-logo.jpg);
+        background-image: url("../ressources/images/experience/Omega-Agency-logo.jpg");
     }
 }
 

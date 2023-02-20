@@ -110,17 +110,17 @@ Visual content on the right :
     }
 
     #portfolio::after {
-        background-image: url(../ressources/images/projects/portfolio.png);
+        background-image: url("../ressources/images/projects/portfolio.png");
     }
 
     #dotfiles::after {
-        background-image: url(../ressources/images/projects/dotfiles.png);
+        background-image: url("../ressources/images/projects/dotfiles.png");
     }
     
     #beballer::after {
-        background-image: url(../ressources/images/projects/beballer.png);
+        background-image: url("../ressources/images/projects/beballer.png");
     }
     #threes::after {
-        background-image: url(../ressources/images/projects/threes.png);
+        background-image: url("../ressources/images/projects/threes.png");
     }
 }
