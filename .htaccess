@@ -1,5 +1,5 @@
 <FilesMatch "\.(ttf|otf|eot|woff|woff2|svg)$">
   <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin *
+    Header set Access-Control-Allow-Origin https://yaniselbeilk.gitlab.io/Portfolio/ 
   </IfModule>
 </FilesMatch>
