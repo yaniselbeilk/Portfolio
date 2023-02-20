@@ -2,6 +2,9 @@
     padding: 100px 25px;
     background-color: var(--light-blue);
 }
+#contacts .title-section {
+    color: var(--midnightblue);
+}
 #contacts-box{
     text-align: center;
 }
@@ -16,17 +19,4 @@
 #contacts-box a img {
     vertical-align: middle;
     width: 64px;
-}
-#contacts-box a::after {
-    overflow: hidden;
-}
-
-#contacts-box a:hover::after {
-    content: attr(data-tooltip);
-    overflow: visible;
-    font-size: 18px;
-    font-weight: bold;
-    padding-left: 10px;
-    color: black;
-    transition: overflow 1s ease;
 }

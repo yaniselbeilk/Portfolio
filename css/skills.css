@@ -2,6 +2,9 @@
     padding: 100px 30px;
     background-color: steelblue;
 }
+#skills .title-section {
+    color: var(--midnightblue);
+}
 #skills-box {
     display: flex;
     gap: 60px;
