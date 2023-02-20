@@ -1,9 +1,8 @@
-const express = require('express');
-const app = express();
-const cors = require("cors");
+const express = require("express");
+const helmet = require("helmet");
 
-app.use(
-    cors({
-        origin: "*",
-    })
-)
+const app = express();
+
+helmet({
+    crossOriginResourcePolicy: false,
+});
