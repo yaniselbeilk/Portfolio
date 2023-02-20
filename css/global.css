@@ -95,3 +95,42 @@
     }
 
 }
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+.show  {
+    opacity: 1;
+    filter: blur(0);
+}
+@media(prefers-reducted-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.tooltip:hover::before {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: rgba(0, 0, 30);
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    transform: translateY(30px) translateX(3px);
+    animation: 0.5s opacity-tooltip;
+}
+.tooltip:hover::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    text-align: center;
+    background: rgba(0, 0, 30);
+    padding: 10px;
+    border-radius: 15px;
+    transform: translateY(50px) translateX(-75px);
+    animation: 0.5s opacity-tooltip;
+}

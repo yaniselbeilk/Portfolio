@@ -15,15 +15,17 @@
     <link href="css/contacts.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/footer.css" rel="stylesheet" type="text/css" media="screen" />
     <title>Yanis El Beilk Portfolio</title>
-    <script src="js/particles.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/skills.js"></script>
+    <script defer src="js/particles.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/skills.js"></script>
+    <script defer src="js/scroll.js"></script>
 </head>
 
 <body>
 <header id="home">
     <nav id="navigation-bar">
         <a href="#"><img src="ressources/images/logo.ico" alt="Logo of Yanis EL BEILK" class="logo"/></a>
+        <div id="switch"></div>
         <ul id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -90,7 +92,7 @@
     <section id="experience">
         <h2 class="title-section" id="experience-title">Experience</h2>
 
-        <div class="experience-presentation" id="videomuseum">
+        <div class="experience-presentation hidden" id="videomuseum">
             <img src="ressources/images/experience/videomuseum-logo.jpg" alt="Videomuseum logo" class="visual-content" />
             <div class="experience-information" id="videomuseum-information">
                 <div class="job-title">Systems & network administrator</div>
@@ -118,7 +120,7 @@
             </div>
         </div>
 
-        <div class="experience-presentation" id="omega-agency">
+        <div class="experience-presentation hidden" id="omega-agency">
             <img src="ressources/images/experience/Omega-Agency-logo.jpg" alt="Omega Agency logo" class="visual-content" />
             <div class="experience-information" id=omega-agency-information>
                 <div class="job-title">Full-Stack developer</div>
@@ -151,7 +153,7 @@
     <section id="projects">
         <h2 class="title-section" id="title-projects">Projects</h2>
 
-        <div class="projects-presentation" id="portfolio">
+        <div class="projects-presentation hidden" id="portfolio">
             <img src="ressources/images/projects/portfolio.png" alt="Portfolio screenshot" class="visual-content"/>
             <div class="projects-information" id="portfolio-information">
                 <div class="projects-title">Portfolio</div>
@@ -171,7 +173,7 @@
             </div>
         </div>
 
-        <div class="projects-presentation" id="dotfiles">
+        <div class="projects-presentation hidden" id="dotfiles">
             <img src="ressources/images/projects/dotfiles.png" alt="dotfiles picture" class="visual-content" />
             <div class="projects-information" id="dotfiles-information">
                 <div class="projects-title">Dotfiles</div>
@@ -191,7 +193,7 @@
             </div>
         </div>
 
-        <div class="projects-presentation" id="beballer">
+        <div class="projects-presentation hidden" id="beballer">
             <img src="ressources/images/projects/beballer.png" alt="Beballer header" class="visual-content" />
             <div class="projects-information" id="beballer-information">
                 <div class="projects-title">Beballer</div>
@@ -218,7 +220,7 @@
             </div>
         </div>
 
-        <div class="projects-presentation" id="threes">
+        <div class="projects-presentation hidden" id="threes">
             <img src="ressources/images/projects/threes.png" alt="threes game" class="visual-content" />
             <div class="projects-information" id="threes-information">
                 <div class="projects-title">Threes</div>
@@ -243,7 +245,7 @@
     </section>
     <div class="spacer layer-darkslateblue-steelblue"></div>
     <section id="skills">
-        <h2 class="title-section">My skills box !</h2>    
+        <h2 class="title-section">My skills box!</h2>    
     <div id="skills-box">
         <div id="title-skills-category">
             <button>Software Development</button>
@@ -465,7 +467,7 @@
     </section>
     <div class="spacer layer-steelblue-lightblue"></div>
     <section id="contacts">
-        <h2 class="title-section">How to contact me !</h2>
+        <h2 class="title-section">How to contact me!</h2>
         <div id="contacts-box">
             <a href="https://www.linkedin.com/in/yaniselbeilk/" target="_blank">
                 <img src="ressources/images/contacts/linkedin-logo.svg" alt="Linkedin logo" />

@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-
-    const titleSkillsCategory = document.getElementById('title-skills-category').getElementsByTagName('button');
-    const containerSkills = document.getElementsByClassName('container-skills')
+const titleSkillsCategory = document.getElementById('title-skills-category').getElementsByTagName('button');
+const containerSkills = document.getElementsByClassName('container-skills')
 
 var indexButton = 0
 
@@ -32,6 +30,4 @@ window.addEventListener('resize', () => {
         titleSkillsCategory[indexButton].classList.toggle('button-skills', true);
         containerSkills[indexButton].classList.toggle('skills-visible', true);
     }
-});
-
 });

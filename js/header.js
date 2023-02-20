@@ -2,8 +2,6 @@ particlesJS.load('home', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-
 const menuButton = document.getElementById("menu-burger-icon");
 const menuMobile = document.getElementById("navigation-bar-mobile");
 const exitMenuButton = document.getElementById("menu-exit-icon");
@@ -42,6 +40,4 @@ window.addEventListener('scroll', ()=>{
         navbar.classList.toggle('sticky', true);
     }
     lastScrollY = window.scrollY;
-});
-
 });
