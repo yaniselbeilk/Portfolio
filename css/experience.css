@@ -9,7 +9,6 @@
 #experience-title {
     color: azure;
 }
-
 /*
 Visual content on the left :
 - Videomuseum
@@ -19,6 +18,7 @@ Visual content on the left :
 }
 #videomuseum-information {
     text-align: end;
+    align-items: end;
     margin-left: -100px;
 }
 #videomuseum-description {
@@ -33,6 +33,7 @@ Visual content on the right :
 }
 #omega-agency-information {
     text-align: start;
+    align-items: start;
     margin-right: -100px;
 }
 #omega-agency-description {

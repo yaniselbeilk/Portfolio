@@ -60,6 +60,7 @@ Visual content on the right :
 
 #dotfiles-information, #threes-information {
     text-align: start;
+    align-items: start;
     margin-right: -100px;
 }
 
