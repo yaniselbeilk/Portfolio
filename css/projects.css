@@ -67,12 +67,6 @@ Visual content on the right :
     padding: 5% calc(100px + 5%) 5% 5%;
 }
 @media screen and (max-width: 1000px) {
-    .github-logo:hover, .gitlab-logo:hover {
-        stroke: white;
-    }
-    .internet-logo:hover {
-        fill: white;
-    }
 
     #portfolio-information,
     #dotfiles-information,

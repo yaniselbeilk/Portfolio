@@ -84,9 +84,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .container-skills a:hover {
-        background-color: var(--light-yellow);
-    }
     #title-skills-category {
         display: none;
     }
