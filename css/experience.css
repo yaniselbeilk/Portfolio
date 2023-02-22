@@ -43,6 +43,7 @@ Visual content on the right :
 @media screen and (max-width: 1000px) {
     #videomuseum-information, #omega-agency-information {
         text-align: start;
+        align-items: start;
         margin: 0;
         padding: 8%;
     }
