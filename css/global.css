@@ -24,6 +24,10 @@
     --slight-dark-yellow: #dfdf71;
     --orange-gitlab: #E24329;
 }
+main, footer {
+    position: relative;
+    z-index: 0;
+}
 :any-link {
     cursor: pointer;
     pointer-events: auto;

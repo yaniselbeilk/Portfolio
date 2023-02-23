@@ -1,7 +1,13 @@
-particlesJS.load('home', 'assets/particles.json', function () {
-    console.log('callback - particles.js config loaded');
-});
 
+tsParticles
+    .loadJSON("home", "assets/particles.json")
+    .then((container) => {
+        console.log("callback - tsparticles config loaded");
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+    
 const menuButton = document.getElementById("menu-burger-icon");
 const menuMobile = document.getElementById("navigation-bar-mobile");
 const exitMenuButton = document.getElementById("menu-exit-icon");

@@ -1,9 +1,9 @@
 #home {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     height: 100svh;
     max-width: 100%;
-    background: radial-gradient(ellipse at bottom, steelblue 0%, black 85%);
+    background: radial-gradient(ellipse at bottom, rgb(1, 56, 100) 0%, black 85%);
 }
 #navigation-bar {
     position: fixed;
