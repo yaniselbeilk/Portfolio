@@ -14,6 +14,9 @@
     text-align: center;
 }
 #title-skills-category {
+    background-color: var(--blue-azure);
+    box-shadow: 0px 0px 20px black;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,11 +25,12 @@
     gap: 10px;
 }
 .chevron {
+    pointer-events: auto;
     width: 64px;
     cursor: pointer;
 }
 .chevron:hover {
-    fill: var(--blue-azure);
+    fill: var(--sky-blue);
 }
 .title-focus {
     font-size: 28px;
