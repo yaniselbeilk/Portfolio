@@ -26,10 +26,10 @@
     stroke: var(--orange-gitlab);
 }
 .github-logo:hover {
-    stroke: var(--light-blue);
+    stroke: var(--blue-azure);
 }
 .internet-logo:hover {
-    fill: var(--light-blue);
+    fill: var(--blue-azure);
 }
 
 /*

@@ -13,7 +13,7 @@ footer {
     font-size: large;
 }
 #license:hover {
-    color: var(--light-blue);
+    color: var(--blue-azure);
 }
 #foot a span {
     color: white;

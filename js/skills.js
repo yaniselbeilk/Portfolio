@@ -1,33 +1,87 @@
-const titleSkillsCategory = document.getElementById('title-skills-category').getElementsByTagName('button');
-const containerSkills = document.getElementsByClassName('container-skills')
+let titleSkills = ["Software Development", "Web Development", "Mobile Development", "System Administration", "Design & Editing"];
+const titleSkillsCategory = document.getElementById('title-skills-category').getElementsByTagName('span');
+const containerSkills = document.getElementsByClassName('container-skills');
+const chevronUpCircle = document.getElementById('chevron-up-circle');
+const chevronDownCircle = document.getElementById('chevron-down-circle');
 
-var indexButton = 0
+
+var indexTitleSkillsTop = titleSkills.length-1;
+var indexTitleSkillsCenter = 0;
+var indexTitleSkillsBottom = 1;
 
 if (window.screen.width > 1000) {
-    titleSkillsCategory[indexButton].classList.toggle('button-skills', true);
-    containerSkills[indexButton].classList.toggle('skills-visible', true);
+    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
 }
-
-for (let index = 0; index < titleSkillsCategory.length; index++) {
-    titleSkillsCategory[index].addEventListener('click', ()=>{
-        titleSkillsCategory[index].classList.toggle('button-skills', true);
-        containerSkills[index].classList.toggle('skills-visible', true);
-
-        if (indexButton!=index) {
-            titleSkillsCategory[indexButton].classList.toggle('button-skills', false);
-            containerSkills[indexButton].classList.toggle('skills-visible', false);
-            indexButton = index;  
+chevronDownCircle.addEventListener('click', () => {
+    if (indexTitleSkillsTop == titleSkills.length - 1) {
+        indexTitleSkillsTop = 0;
+        indexTitleSkillsCenter++;
+        indexTitleSkillsBottom++;
+    } else if (indexTitleSkillsCenter == titleSkills.length - 1) {
+        indexTitleSkillsTop++;
+        indexTitleSkillsCenter = 0;
+        indexTitleSkillsBottom++;
+    } else if (indexTitleSkillsBottom == titleSkills.length - 1) {
+        indexTitleSkillsTop++;
+        indexTitleSkillsCenter++;
+        indexTitleSkillsBottom = 0;;
+    } else {
+        indexTitleSkillsTop++;
+        indexTitleSkillsCenter++;
+        indexTitleSkillsBottom++;
+    }
+    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
+    for (let index = 0; index < titleSkills.length; index++) {
+        if (index!=indexTitleSkillsCenter) {
+            containerSkills[index].classList.toggle('skills-visible', false);
         }
-    });
-}
+    }
+});
+
+chevronUpCircle.addEventListener('click', () => {
+    if (indexTitleSkillsTop == 0) {
+        indexTitleSkillsTop = titleSkills.length - 1;
+        indexTitleSkillsCenter--;
+        indexTitleSkillsBottom--;
+    } else if (indexTitleSkillsCenter == 0) {
+        indexTitleSkillsTop--;
+        indexTitleSkillsCenter = titleSkills.length - 1;
+        indexTitleSkillsBottom--;
+    } else if (indexTitleSkillsBottom == 0) {
+        indexTitleSkillsTop--;
+        indexTitleSkillsCenter--;
+        indexTitleSkillsBottom = titleSkills.length - 1;
+    } else {
+        indexTitleSkillsTop--;
+        indexTitleSkillsCenter--;
+        indexTitleSkillsBottom--;
+    }
+    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
+    for (let index = 0; index < titleSkills.length; index++) {
+        if (index != indexTitleSkillsCenter) {
+            containerSkills[index].classList.toggle('skills-visible', false);
+        }
+    }
+});
 
 window.addEventListener('resize', () => {
     if (window.screen.width <= 1000) {
         for (let index = 0; index < containerSkills.length; index++) {
-            containerSkills[index].classList.toggle('skills-visible', false);   
+            containerSkills[index].classList.toggle('skills-visible', false);
         }
     } else {
-        titleSkillsCategory[indexButton].classList.toggle('button-skills', true);
-        containerSkills[indexButton].classList.toggle('skills-visible', true);
+        titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
+        titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
+        titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+        containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
     }
 });

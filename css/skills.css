@@ -7,42 +7,44 @@
 }
 #skills-box {
     display: flex;
-    gap: 60px;
-    box-shadow: 0px 0px 20px black;
-    background-color: white;
-    border-radius: 30px;
-    padding: 50px;
+    gap: 50px;
     margin: auto;
-    width: min(1200px, 80%);
+    width: min(1300px, 90%);
     min-height: 700px;
     text-align: center;
 }
 #title-skills-category {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-    width: 30%;
+    width: 50%;
     gap: 10px;
 }
-#title-skills-category>button {
-    padding: 20px;
+.chevron {
+    width: 64px;
     cursor: pointer;
-    background-color: aliceblue;
-    box-shadow: 0px 0px 20px var(--grayblue);
-    border-radius: 30px;
-    max-width: 250px;
-    font-size: 15px;
-    font-family: 'Ubuntu';
+}
+.chevron:hover {
+    fill: var(--blue-azure);
+}
+.title-focus {
+    font-size: 28px;
     font-weight: bold;
+    color: var(--midnightblue);
+    transition: all 1s ease;
 }
-#title-skills-category>button.button-skills {
-    background-color: var(--blue-azure);
+.title-behind {
+    color: var(--grayblue);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.7;
 }
-#title-skills-category>button:hover {
-    background-color: var(--blue-azure);
+.hidden-title-skills {
+    display: none;
 }
-#title-skills-category>button:active {
-    background-color: cornflowerblue;
+#title-skills-category>span {
+    height: 50px;
 }
 .title-skills-mobile {
     display: none;
@@ -50,6 +52,10 @@
 .main-container {
     text-align: center;
     width: 100%;
+    box-shadow: 0px 0px 20px black;
+    background-color: var(--blue-azure);
+    border-radius: 30px;
+    padding: 20px;
 }
 .skills-logo {
     width: 64px;
@@ -65,7 +71,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: var(--light-yellow);
+    background-color: var(--sky-blue);
     color: black;
     width: 110px;
     margin: 10px;
@@ -93,7 +99,11 @@
         width: 100%;
         padding: 0;
     }
-
+    .main-container {
+        background-color: unset;
+        box-shadow: unset;
+        border-radius: unset;
+    }
     .title-skills-mobile {
         display: block;
         font-size: 20px;
@@ -103,7 +113,7 @@
     }
     .container-skills {
         display: block;
-        background-color: white;
+        background-color: var(--blue-azure);
         box-shadow: 0px 0px 20px black;
         border-radius: 20px;
         padding: 5px;

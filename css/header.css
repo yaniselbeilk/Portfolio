@@ -27,6 +27,7 @@
     height: 75px;
     background-color: var(--fadedarkblue);
     box-shadow: 0 var(--shadow-navigation-bar) 20px black;
+    pointer-events: auto;
 }
 #navigation-bar.nav-hidden {
     transform: translateY(calc(-1*var(--nav-height)));
