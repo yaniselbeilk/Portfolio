@@ -4,7 +4,6 @@ const containerSkills = document.getElementsByClassName('container-skills');
 const chevronUpCircle = document.getElementById('chevron-up-circle');
 const chevronDownCircle = document.getElementById('chevron-down-circle');
 
-
 var indexTitleSkillsTop = titleSkills.length-1;
 var indexTitleSkillsCenter = 0;
 var indexTitleSkillsBottom = 1;
@@ -14,6 +13,11 @@ if (window.screen.width > 1000) {
     titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
     titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
+    let skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
+    for (let index = 0; index < skillsElements.length; index++) {
+        skillsElements[index].classList.toggle('slide-from-bottom', true);
+        skillsElements[index].classList.toggle('slide-from-top', false);
+    }
 }
 chevronDownCircle.addEventListener('click', () => {
     if (indexTitleSkillsTop == titleSkills.length - 1) {
@@ -37,10 +41,16 @@ chevronDownCircle.addEventListener('click', () => {
     titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
     titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
+    skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
+
     for (let index = 0; index < titleSkills.length; index++) {
         if (index!=indexTitleSkillsCenter) {
             containerSkills[index].classList.toggle('skills-visible', false);
         }
+    }
+    for (let index = 0; index < skillsElements.length; index++) {
+        skillsElements[index].classList.toggle('slide-from-bottom', true);
+        skillsElements[index].classList.toggle('slide-from-top', false);
     }
 });
 
@@ -66,10 +76,16 @@ chevronUpCircle.addEventListener('click', () => {
     titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
     titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
+    skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
+
     for (let index = 0; index < titleSkills.length; index++) {
         if (index != indexTitleSkillsCenter) {
             containerSkills[index].classList.toggle('skills-visible', false);
         }
+    }
+    for (let index = 0; index < skillsElements.length; index++) {
+        skillsElements[index].classList.toggle('slide-from-top', true);
+        skillsElements[index].classList.toggle('slide-from-bottom', false);
     }
 });
 
