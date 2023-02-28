@@ -9,9 +9,9 @@ var indexTitleSkillsCenter = 0;
 var indexTitleSkillsBottom = 1;
 
 if (window.screen.width > 1000) {
-    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
-    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
-    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    titleSkillsCategory[0].innerText = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerText = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerText = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
     let skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
     for (let index = 0; index < skillsElements.length; index++) {
@@ -37,9 +37,9 @@ chevronDownCircle.addEventListener('click', () => {
         indexTitleSkillsCenter++;
         indexTitleSkillsBottom++;
     }
-    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
-    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
-    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    titleSkillsCategory[0].innerText = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerText = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerText = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
     skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
 
@@ -72,9 +72,9 @@ chevronUpCircle.addEventListener('click', () => {
         indexTitleSkillsCenter--;
         indexTitleSkillsBottom--;
     }
-    titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
-    titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
-    titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+    titleSkillsCategory[0].innerText = titleSkills[indexTitleSkillsTop];
+    titleSkillsCategory[1].innerText = titleSkills[indexTitleSkillsCenter];
+    titleSkillsCategory[2].innerText = titleSkills[indexTitleSkillsBottom];
     containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
     skillsElements = containerSkills[indexTitleSkillsCenter].getElementsByTagName('a');
 
@@ -95,9 +95,9 @@ window.addEventListener('resize', () => {
             containerSkills[index].classList.toggle('skills-visible', false);
         }
     } else {
-        titleSkillsCategory[0].innerHTML = titleSkills[indexTitleSkillsTop];
-        titleSkillsCategory[1].innerHTML = titleSkills[indexTitleSkillsCenter];
-        titleSkillsCategory[2].innerHTML = titleSkills[indexTitleSkillsBottom];
+        titleSkillsCategory[0].innerText = titleSkills[indexTitleSkillsTop];
+        titleSkillsCategory[1].innerText = titleSkills[indexTitleSkillsCenter];
+        titleSkillsCategory[2].innerText = titleSkills[indexTitleSkillsBottom];
         containerSkills[indexTitleSkillsCenter].classList.toggle('skills-visible', true);
     }
 });
