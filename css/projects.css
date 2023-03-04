@@ -32,66 +32,45 @@
     fill: var(--blue-azure);
 }
 
-/*
-Visual content on the left:
-- Portfolio
-- Beballer
-*/
-#portfolio, #beballer {
+.projects-presentation {
     flex-direction: row;
 }
-
-#portfolio-information, #beballer-information {
+.projects-information {
     text-align: end;
     align-items: end;
     margin-left: -100px;
 }
-
-#portfolio-description, #beballer-description {
+.projects-description {
     padding: 5% 5% 5% calc(100px + 5%);
 }
-/*
-Visual content on the right :
-- Dotfiles
-*/
-#dotfiles, #threes{
+.projects-presentation.projects-presentation-alt{
     flex-direction: row-reverse;
 }
-
-#dotfiles-information, #threes-information {
+.projects-information.projects-information-alt {
     text-align: start;
     align-items: start;
+    margin-left: 0;
     margin-right: -100px;
 }
-
-#dotfiles-description, #threes-description {
+.projects-description.projects-description-alt {
     padding: 5% calc(100px + 5%) 5% 5%;
 }
 @media screen and (max-width: 1000px) {
 
-    #portfolio-information,
-    #dotfiles-information,
-    #beballer-information,
-    #threes-information {
+    .projects-information, .projects-information.projects-information-alt {
         align-items: start;
         text-align: start;
         margin: 0;
         padding: 8%;
     }
 
-    #portfolio-description,
-    #dotfiles-description,
-    #beballer-description,
-    #threes-description {
+    .projects-description, .projects-description.projects-description-alt {
         padding: 0;
         background-color: unset;
         box-shadow: none;
     }
 
-    #portfolio::after,
-    #dotfiles::after,
-    #beballer::after,
-    #threes::after {
+    .projects-presentation::after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -104,6 +83,9 @@ Visual content on the right :
         background-size: cover;
     }
 
+    #dns-sinkhole::after {
+        background-image: url("../ressources/images/projects/DNS-server.png");
+    }
     #portfolio::after {
         background-image: url("../ressources/images/projects/portfolio.png");
     }
