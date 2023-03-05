@@ -9,12 +9,16 @@
 #experience-title {
     color: azure;
 }
+.experience-presentation {
+    max-width: 1200px;
+}
 /*
 Visual content on the left :
 - Videomuseum
 */
 #videomuseum {
     flex-direction: row;
+    justify-content: center;
 }
 #videomuseum-information {
     text-align: end;
@@ -30,6 +34,7 @@ Visual content on the right :
 */
 #omega-agency {
     flex-direction: row-reverse;
+    justify-content: center;
 }
 #omega-agency-information {
     text-align: start;
