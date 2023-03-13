@@ -19,11 +19,8 @@
     border-radius: 30px;
     padding: 5% calc(100px + 5%) 5% 5%;
 }
-.internet-logo, .gitlab-logo, .github-logo {
+.internet-logo, .github-logo {
     width: 32px;
-}
-.gitlab-logo:hover {
-    stroke: var(--orange-gitlab);
 }
 .github-logo:hover {
     stroke: var(--blue-azure);
