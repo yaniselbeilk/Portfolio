@@ -9,4 +9,4 @@ This website present my professional career, my personal and professional projec
 
 Website : [yaniselbeilk.com](https://yaniselbeilk.com)
 
-![Portfolio](https://gitlab.com/yaniselbeilk/Portfolio/-/raw/main/ressources/images/projects/portfolio.png)
+![Portfolio](https://github.com/yaniselbeilk/Portfolio/blob/main/ressources/images/projects/portfolio.png?raw=true)
