@@ -82,6 +82,10 @@
         background-size: cover;
     }
 
+    
+    #resolution-vote::after{
+        background-image: url("../ressources/images/projects/vote-illustration.jpg");
+    }
     #dns-sinkhole::after {
         background-image: url("../ressources/images/projects/DNS-server.png");
     }
