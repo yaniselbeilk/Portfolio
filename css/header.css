@@ -101,15 +101,18 @@
 
 #presentation {
     position: absolute;
-    top: 30vh;
+    top: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     pointer-events: none;
     align-items: flex-start;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
+    bottom: 20%;
+}
+.content-presentation{
+    margin: 10px;
 }
 #hi {
     color: lightblue;
@@ -121,7 +124,7 @@
     animation-fill-mode: forwards;
 }
 #name {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(15px, 8vw, 80px);
     margin-top: 20px;
     color: whitesmoke;
     opacity: 0;
@@ -131,7 +134,7 @@
     animation-fill-mode: forwards
 }
 #profession {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(15px, 8vw, 80px);
     color: cornflowerblue;
     opacity: 0;
     animation: slide-from-left;
@@ -175,6 +178,14 @@
     animation-play-state: paused;
 }
 
+@media screen and (max-height: 800px) {
+    #presentation {
+        top: 20vh;
+    }
+    .content-presentation{
+        margin: 4px;
+    }
+}
 @media screen and (max-width: 900px) {
 
         #menu-burger-icon {
