@@ -100,16 +100,14 @@
 }
 
 #presentation {
-    position: absolute;
-    top: 25vh;
+    position: relative;
+    top: 0;
     display: flex;
     flex-direction: column;
     pointer-events: none;
     align-items: flex-start;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    bottom: 20%;
+    height: 100%;
+    padding: 15% 10%;
 }
 .content-presentation{
     margin: 10px;
@@ -124,7 +122,7 @@
     animation-fill-mode: forwards;
 }
 #name {
-    font-size: clamp(15px, 8vw, 80px);
+    font-size: clamp(20px, 8vw, 80px);
     margin-top: 20px;
     color: whitesmoke;
     opacity: 0;
@@ -134,7 +132,7 @@
     animation-fill-mode: forwards
 }
 #profession {
-    font-size: clamp(15px, 8vw, 80px);
+    font-size: clamp(20px, 8vw, 80px);
     color: cornflowerblue;
     opacity: 0;
     animation: slide-from-left;
@@ -177,13 +175,18 @@
 #chevron-bottom-icon:hover {
     animation-play-state: paused;
 }
-
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 800px),
+        screen and (max-width: 900px) {
     #presentation {
-        top: 20vh;
+        padding-top: 20vh;
     }
+}
+@media screen and (max-height: 800px) {
     .content-presentation{
         margin: 4px;
+    }
+    #name, #profession {
+        font-size: max(20px, 4vw);
     }
 }
 @media screen and (max-width: 900px) {
