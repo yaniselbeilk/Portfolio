@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'JetBrainsMono';
+    src: local('JetBrainsMono-Regular.ttf') format('opentype');
+    src: url('../ressources/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('opentype');
+}
+@font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu-Regular.ttf') format('opentype');
     src: url('../ressources/fonts/Ubuntu/Ubuntu-Regular.ttf') format('opentype');
@@ -8,7 +13,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Ubuntu', 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'JetBrainsMono', 'Ubuntu', 'Montserrat', 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
     /* Global variable */
