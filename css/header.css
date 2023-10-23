@@ -123,7 +123,7 @@
     animation-fill-mode: forwards;
 }
 #name {
-    font-size: clamp(20px, 8vw, 80px);
+    font-size: clamp(20px, 6vw, 60px);
     margin-top: 20px;
     color: whitesmoke;
     opacity: 0;
@@ -133,7 +133,7 @@
     animation-fill-mode: forwards
 }
 #profession {
-    font-size: clamp(20px, 8vw, 80px);
+    font-size: clamp(20px, 6vw, 60px);
     color: cornflowerblue;
     opacity: 0;
     animation: slide-from-left;
