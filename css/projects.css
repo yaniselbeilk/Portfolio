@@ -82,8 +82,10 @@
         background-size: cover;
     }
 
-    
-    #resolution-vote::after{
+    #conversational-agent::after {
+        background-image: url("../ressources/images/projects/talkrai-callbot.jpg");
+    }
+    #resolution-vote::after {
         background-image: url("../ressources/images/projects/vote-illustration.jpg");
     }
     #dns-sinkhole::after {
