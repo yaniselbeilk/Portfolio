@@ -8,5 +8,3 @@
 This website present my professional career, my personal and professional projects and my skills.
 
 Website : [yaniselbeilk.com](https://yaniselbeilk.com)
-
-![Portfolio](https://github.com/yaniselbeilk/Portfolio/blob/main/ressources/images/projects/portfolio.png?raw=true)
