@@ -1,4 +1,4 @@
-let titleSkills = ["System Administration", "Software Development", "Web Development", "Mobile Development", "Design & Editing"];
+let titleSkills = ["System Administration", "Network Administration", "Cloud Computing", "Software Development", "Web Development", "Mobile Development", "Design & Editing"];
 const titleSkillsCategory = document.getElementById('title-skills-category').getElementsByTagName('span');
 const containerSkills = document.getElementsByClassName('container-skills');
 const chevronUpCircle = document.getElementById('chevron-up-circle');

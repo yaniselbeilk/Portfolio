@@ -32,30 +32,30 @@ Visual content on the left :
 Visual content on the right :
 - Omega Agency
 */
-#omega-agency {
+#omega-agency, #stef {
     flex-direction: row-reverse;
     justify-content: center;
 }
-#omega-agency-information {
+#omega-agency-information, #stef-information {
     text-align: start;
     align-items: start;
     margin-right: -100px;
 }
-#omega-agency-description {
+#omega-agency-description, #stef-description {
     padding: 5% calc(100px + 5%) 5% 5%;
 }
 
 @media screen and (max-width: 1000px) {
-    #videomuseum-information, #omega-agency-information {
+    #videomuseum-information, #omega-agency-information, #stef-information {
         text-align: start;
         align-items: start;
         margin: 0;
         padding: 8%;
     }
-    #videomuseum-description, #omega-agency-description {
+    #videomuseum-description, #omega-agency-description, #stef-description {
         padding: 0;
     }
-    #videomuseum::after, #omega-agency::after {
+    #videomuseum::after, #omega-agency::after, #stef::after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -66,6 +66,9 @@ Visual content on the right :
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    #stef::after {
+        background-image: url("../ressources/images/experience/stef-car.jpg");
     }
     #videomuseum::after {
         background-image: url("../ressources/images/experience/videomuseum-logo.jpg");
